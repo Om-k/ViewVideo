@@ -1,0 +1,113 @@
+.add-playlist-area{
+    background-color: rgba(0, 0, 0, 0.32);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist-values{
+    background-color: white;    
+    width: 20em;
+    height: 30em;
+    border-radius: 15px;
+    padding: 10px;
+    max-height: 100vh;
+}
+
+.playlist-header-area{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlists-area{
+    height: 100%;
+}
+
+.playlists{
+  height: 80%;   
+  overflow: auto;
+}
+
+.playlist{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.playlist-box {
+    width: 19px;
+    height: 19px;
+}
+
+.playlist-name{
+    margin-left: 5px;
+}
+
+.create-playlist {
+    color: rgb(0, 81, 255);
+    cursor: pointer;
+}
+
+.create-playlist:hover{
+    color: rgb(137, 174, 253);
+    transition: 0.3s;
+}
+
+.playlist-button {
+    border-radius: 25px;
+    background-color: rgb(222, 222, 222);
+    color: rgb(0, 0, 0);
+    padding: 0px 30px 0px 30px;
+    margin-left: 1em;
+    height: 3em;
+    margin-top: 4px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.playlist-button:hover{
+    background-color: rgb(210, 210, 210);
+    transition: 0.3s;
+}   
+
+.playlist-button-area{
+    display: flex;
+    justify-content: center;
+}
+
+.close-btn{
+    margin-top: 3px;
+}
+
+.close-btn:hover{
+    color: rgb(109, 109, 109);
+    transition: 0.4s;
+}
+
+.inp-feild{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(77, 77, 77);
+    padding: 9px 10px 9px 10px;
+    margin-top: 10px;
+}
+
+.description-text-area{
+    margin-top: 10px;
+    min-width: 100%;
+    max-width: 100%;
+    height: 11em;
+}
+
+.sec-playlist-button{
+    margin-left: 5px;
+    background-color: rgb(181, 0, 0);
+    color: white;
+}

@@ -1,0 +1,58 @@
+.link-reset{
+    text-decoration: none;
+    color: black;
+}
+
+.videoCardBack {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: fit-content;
+    size: inherit;
+}
+
+.videoThumbnail{
+    border-radius: 10px;
+    object-fit: fill;
+    width : 100%;
+}
+
+.videoCardChannelImg{
+    height: 2.4em;
+    width : 2.4em;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.MainTitleArea{
+    display: flex;
+    margin-top: 0.8em;
+}
+
+.VideoTitle{
+    min-height: 1.5em;
+    font-weight: 600;
+}
+
+.channelData{
+    margin-left: 0.8em;
+}
+
+.channelDataTxt{
+    font-size: small;
+    color: #8a8a8a;
+    font-weight: lighter;
+}
+
+.gapTop{
+    margin-top: 2px;
+}
+
+.vidContentText{
+    display: flex;
+    margin-top: -3px;
+}
+
+.textGap{
+    margin-left: 5px;
+}

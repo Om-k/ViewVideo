@@ -1,0 +1,19 @@
+.sideBar{
+    width: 6%;
+    height: 100%;
+    position: fixed;
+}
+
+.sideBarPos{
+    width: 6%;
+    z-index: -1;
+}
+
+.listVlaues{
+    list-style-type: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}

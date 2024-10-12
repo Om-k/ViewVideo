@@ -1,0 +1,36 @@
+.playlist-container {
+    display: flex;
+}
+
+/* .playlist-videos {
+    width: 100%;
+} */
+
+.channel-info {
+    width: 22em;
+    height: 85%;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    position: fixed;
+}
+
+.channel-info-area{
+    width: 22em;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.playlist-thumbnail {
+    filter: blur(0);
+    object-fit: fill;
+    width: 100%;
+    border-radius: inherit;
+    margin-bottom: 7px;
+    filter: blur(0px);
+}
+
+.playlist-text{
+    color: white;
+}

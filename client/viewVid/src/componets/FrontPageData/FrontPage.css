@@ -1,0 +1,7 @@
+.VideosAreaCont{
+    width: 94%;
+}
+
+.videoAndSideBarCont{
+    display: flex;
+}

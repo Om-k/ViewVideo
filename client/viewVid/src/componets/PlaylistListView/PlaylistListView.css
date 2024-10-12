@@ -1,0 +1,20 @@
+.playlist-card{
+    margin-bottom: 2em;
+    display: flex;
+}
+
+.playlist-image{
+    height: 13em;
+    width : 23em;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.playlist-details{
+    margin-left: 10px;
+}
+
+.link-reset{
+    text-decoration: none;
+    color: black;
+}

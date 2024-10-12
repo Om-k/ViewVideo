@@ -1,0 +1,43 @@
+.link-reset{
+    text-decoration: none;
+    color: black;
+}
+
+.list-video-card{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    margin-bottom: 2em;
+}
+
+.channel-image{
+    border-radius: 10px;
+    object-fit: fill;
+    /* height: 13em; */
+    height: inherit;
+    width: 23em;
+}
+
+.video-info-section{
+    margin-left: 1em;
+}
+
+.video-title{
+    font-weight: normal;
+}
+
+.channel-owner-area{
+    display: flex;
+}
+
+.owner-image{
+    object-fit: cover;
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+}
+
+.owner-name{
+    text-align: center;
+    margin-left: 5px;
+}

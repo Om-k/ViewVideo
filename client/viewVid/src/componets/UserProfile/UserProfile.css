@@ -1,0 +1,31 @@
+.profile-area{
+   padding: 0px 5% 0px 5%;
+}
+
+.channel-cover-img{
+    width: 100%;
+    background-size: cover;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.user-profile-area{
+    display: flex;
+    margin-top: 10px;
+}
+
+.user-profile-img{
+    border-radius: 100%;
+    width: 7.5em;
+    height: 7.5em;
+    object-fit: cover;
+}
+
+.user-content{
+    margin-left: 10px;
+}
+
+.subscribers-text{
+    font-size: x-small;
+}
