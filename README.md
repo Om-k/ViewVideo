@@ -29,9 +29,10 @@
 ## Pages
 
 - Home Page
-<div style="border: 2px solid black; display: inline-block; padding: 5px;">
+<div style="border: 2px solid black; display: inline-block; padding: 5px;margin-bottom: 10px;">
     <img src="https://github.com/user-attachments/assets/5df48d06-696b-4663-8cbf-e548a7c33f63" alt="Home Page"/>
 </div>
+
 
 - History
 <div style="border: 2px solid black; display: inline-block; padding: 5px;">
