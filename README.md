@@ -52,8 +52,8 @@
 </div>
 <img src="https://github.com/user-attachments/assets/61647809-894d-408e-aff7-abc418d0aa15" alt="Video Page"/>
 
-- Seaching
-<img src="https://github.com/user-attachments/assets/558fa80a-202d-4448-8f96-4a38a5b68762" alt="Video Page"/>
+- Searching
+<img src="https://github.com/user-attachments/assets/7e1efd1a-cb7d-48b6-8ecf-54ceef18161f" alt="Video Page"/>
 
 
 
