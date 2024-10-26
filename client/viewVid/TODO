@@ -1,5 +1,5 @@
 . Can try getting login info from cookies                          
-. Editing profile and videos feature
+. Editing profile and videos editing feature
 . Updates to user profile so that your profile and others have different features (ex: total views for current user, Subscribe button for others) maybe showing their playlists,Liked videos (for current user)
 . Form validations
 . Avoid same video getting added twice in history 
