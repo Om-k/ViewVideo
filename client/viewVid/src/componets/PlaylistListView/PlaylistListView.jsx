@@ -17,7 +17,7 @@ const PlaylistListView = () => {
     useEffect(() => {
         ; (async () => {
             const userData = await authService.getUserData();
-            console.log(userData.data.data._id);
+            //console.log(userData.data.data._id);
 
             setUserID(userData.data.data._id);
             setRender(prevVal => !prevVal)

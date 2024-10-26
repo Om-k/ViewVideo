@@ -38,7 +38,7 @@ class AuthService {
         }
     }
 
-    checkLoggedIn = () =>{
+    checkLoggedIn = () => {
         const loggedIn = sessionStorage.getItem("loggedIn")
         //console.log("loggedIn ",loggedIn)
         if(loggedIn===null){

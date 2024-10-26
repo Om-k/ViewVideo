@@ -11,7 +11,10 @@ export default function () {
     if (!(userProfile?.length == 0)) {
         // console.log("No error",userProfile,userProfile?.length == 0 )
         sessionStorage.setItem("loggedIn", true);
+        // window.location.reload()
     }
+
+
     
     return loading
 }

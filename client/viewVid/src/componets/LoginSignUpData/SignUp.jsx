@@ -2,8 +2,15 @@ import "./LoginSignUp.css"
 import NavBar from "../NavbarData/NavBar"
 import { useState } from "react";
 import authService from "../../services/authService";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import UploadingPage from "../UploadingPage/UploadingPage";
 
 export default function () {
+    const navigate = useNavigate()
+
+    const [uploading,setUploading] = useState(false)
 
     const [userData, setUserData] = useState(
         {
@@ -15,25 +22,32 @@ export default function () {
             coverImage: null
         })
 
-        const handleSubmit = (event) => {
-            event.preventDefault();
-            console.log("Data", userData)
-    
-            const formData = new FormData();
-            formData.append('fullName', userData.fullName);
-            formData.append('email', userData.email);
-            formData.append('password', userData.password);
-            formData.append('username', userData.fullName);
-            formData.append('avatar', userData.avatar);
-            formData.append('coverImage', userData.coverImage);
-            
-            const logInResp = authService.signUp(formData)
-            console.log(logInResp)
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        console.log("Data", userData)
 
-        }
+        const formData = new FormData();
+        formData.append('fullName', userData.fullName);
+        formData.append('email', userData.email);
+        formData.append('password', userData.password);
+        formData.append('username', userData.fullName);
+        formData.append('avatar', userData.avatar);
+        formData.append('coverImage', userData.coverImage);
+
+
+        setUploading(true)
+        const logInResp = await authService.signUp(formData)
+        //console.log(logInResp)
+        setUploading(false)
+        //toast("User Created Please logIn");
+        navigate("/Login/true")
+
+    }
 
     return (
         <>
+            <ToastContainer />
+            {uploading && <UploadingPage/> }
             <NavBar searchVisible={false} rightVisible={false} />
 
             <div className="login-area">
@@ -46,7 +60,9 @@ export default function () {
                                 <label className="inp-label">Username</label>
                                 <input placeholder="Enter Username" className="inp-feild"
                                     onChange={(e) => { setUserData({ ...userData, fullName: e.target.value }) }}
-                                    required />
+                                    required
+                                    minLength={3}
+                                />
                             </div>
 
                             <div className="inp-text-section">
@@ -58,9 +74,9 @@ export default function () {
 
                             <div className="inp-text-section">
                                 <label htmlFor="password" className="inp-label">Password</label>
-                                <input id="password" placeholder="Enter Password" className="inp-feild" 
-                                onChange={(e) => { setUserData({ ...userData, password: e.target.value }) }}
-                                required/>
+                                <input id="password" placeholder="Enter Password" className="inp-feild"
+                                    onChange={(e) => { setUserData({ ...userData, password: e.target.value }) }}
+                                    required />
                             </div>
                         </div>
 
@@ -71,9 +87,9 @@ export default function () {
                                     <label htmlFor="file-upload-dp" className="custom-file-label">
                                         Upload
                                     </label>
-                                    <input id="file-upload-dp" type="file" className="inp-field" accept="image/*" 
-                                    onChange={(e) => { setUserData({ ...userData, avatar: e.target.files[0] }) }}
-                                    required/>
+                                    <input id="file-upload-dp" type="file" className="inp-field" accept="image/*"
+                                        onChange={(e) => { setUserData({ ...userData, avatar: e.target.files[0] }) }}
+                                        required />
                                 </div>
                             </div>
 
@@ -83,9 +99,9 @@ export default function () {
                                     <label htmlFor="file-upload-Cover" className="custom-file-label" >
                                         Upload
                                     </label>
-                                    <input id="file-upload-Cover" type="file" className="inp-field" accept="image/*" 
-                                    onChange={(e) => { setUserData({ ...userData, coverImage: e.target.files[0] }) }}
-                                    required/>
+                                    <input id="file-upload-Cover" type="file" className="inp-field" accept="image/*"
+                                        onChange={(e) => { setUserData({ ...userData, coverImage: e.target.files[0] }) }}
+                                        required />
                                 </div>
                             </div>
                         </div>

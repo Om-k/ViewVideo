@@ -3,6 +3,10 @@ import NavBar from "../NavbarData/NavBar"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import apiClient from "../../services/apiClient";
+import postDataRequest from "../../services/postDataRequest.js"
+import UploadingPage from "../UploadingPage/UploadingPage.jsx";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function () {
 
@@ -24,6 +28,8 @@ export default function () {
         setStatus(event.target.value);
     };
 
+    const [videoUploading, setVideoUploding] = useState(false)
+
     const handleSubmit = async (event) => {
         event.preventDefault();
         console.log("Data", videoData)
@@ -34,18 +40,30 @@ export default function () {
         formData.append('videoFile', videoData.videoFile);
         formData.append('thumbnail', videoData.thumbnail);
 
-        try {
-            await apiClient.post("/videos", formData);
-            console.log("Video Uploaded")
-        } catch (err) {
-            console.log(err)
-        }
+        // try {
+        //     await apiClient.post("/videos", formData);
+        //     console.log("Video Uploaded")
+        // } catch (err) {
+        //     console.log(err)
+        // }
+
+        setVideoUploding(true)
+
+        await postDataRequest("/videos", formData)
+        console.log("Video Uploaded")
+        toast("Video Uploaded!")
+        setVideoUploding(false)
+
+        navigate("/")
 
         //navigate('/VideoUploading', { state: { videoData: videoData } });
     };
 
     return (
         <>
+            <ToastContainer />
+            {videoUploading && <UploadingPage />}
+
             <NavBar searchVisible={false} rightVisible={false} />
 
             <div className="login-area">

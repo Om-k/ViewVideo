@@ -8,13 +8,7 @@ import { useEffect } from "react";
 
 const FrontPage = () => {
 
-    const loading = initialization()
-
     return (
-        <>
-        {loading && <LoadingPage/>}
-
-        {!loading &&
         <div>
             <NavBar />
             <div className="videoAndSideBarCont">
@@ -24,8 +18,6 @@ const FrontPage = () => {
                 </div>
             </div>
         </div>
-        }
-        </>
     );
 };
 

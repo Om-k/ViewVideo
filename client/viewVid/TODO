@@ -1,3 +1,13 @@
-. Can try getting login infor from cookies instead of cookies                          
-. Playlist not done (Need to update backend to add thumnil to video). 
-. Loading screen for video uploading and login
+. Can try getting login info from cookies instead of cookies                          
+. Editing profile and video
+. Update to user profile so that your profile and others have different features (ex: total vides for urs, Subscribe button for others) maybe showing their playlists,Liked videos (peersonal)
+. Form validations
+. History same video getting added twice 
+. Enter button for comments input
+. Logout warning
+. Three dots drop down for video card
+. Debouncing or cacelling calls for likes and subsribe and all
+. Going to a unkown channel throughparams shoould show in nice page
+. Error showing after loggning in  (for samlll time)
+. Loading and Error and no vids found pages
+. Dislike in backend
