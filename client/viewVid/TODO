@@ -1,14 +1,13 @@
-- Implement functionality to retrieve login information from cookies.
-- Enable users to edit their profiles and videos.
-- Update user profiles to feature personalized elements, such as the total number of videos for the user, a "Subscribe" button for others, and displays for playlists and liked videos.
-- Ensure robust form validations are in place.
-- Prevent duplicate entries of the same video in the history.
-- Allow users to submit comments using the Enter key.
-- Provide a logout warning for users before they exit.
-- Incorporate a three-dot dropdown menu on video cards for additional options.
-- Implement debouncing or cancellation of calls for likes, subscriptions, and similar actions.
-- Ensure that navigating to an unknown channel via parameters leads to an aesthetically pleasing page.
-- Display an error message briefly after login attempts when necessary.
-- Create dedicated loading, error, and "no videos found" pages.
-- Develop a backend feature for the dislike option.
-- Ensure a responsive design across all devices.
+. Can try getting login info from cookies                          
+. Editing profile and videos feature
+. Updates to user profile so that your profile and others have different features (ex: total views for current user, Subscribe button for others) maybe showing their playlists,Liked videos (for current user)
+. Form validations
+. Avoid same video getting added twice in history 
+. Submit on sclick of enter for comments
+. Logout warning
+. Three dots drop down for video card
+. Debouncing or cacelling calls for likes and subsribe and all
+. Going to a unkown channel throughparams should show in nice page
+. Error shows after loggning in  (for samlll time)
+. Loading and Error and no video not exist pages
+. Dislike feature to be updated in backend and frontend

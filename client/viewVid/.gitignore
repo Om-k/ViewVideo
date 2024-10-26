@@ -25,7 +25,3 @@ dist-ssr
 
 .env
 node_modules/
-
-TODO
-
-.gitignore
