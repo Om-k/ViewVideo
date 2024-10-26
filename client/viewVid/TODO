@@ -2,10 +2,10 @@
 . Editing profile and videos editing feature
 . Updates to user profile so that your profile and others have different features (ex: total views for current user, Subscribe button for others) maybe showing their playlists,Liked videos (for current user)
 . Form validations
-. Avoid same video getting added twice in history 
-. Submit on sclick of enter for comments
+. Avoid same video getting added consecutively  in history 
+. Submit on click of enter for comments
 . Logout warning
-. Three dots drop down for video card
+. Three dots drop down for video card which includes share and add to playlist
 . Debouncing or cacelling calls for likes and subsribe and all
 . Going to a unkown channel throughparams should show in nice page
 . Error shows after loggning in  (for samlll time)
