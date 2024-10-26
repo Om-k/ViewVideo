@@ -46,7 +46,7 @@
 </div>
 
 ### Video Page
--  <div style="border: 2px solid black; display: inline-block; padding: 5px;display:flex;">
+<div style="border: 2px solid black; display: inline-block; padding: 5px;display:flex;">
     <img src="https://github.com/user-attachments/assets/1c77fe16-8211-415e-b23e-030490696579" alt="Video Page"  />
      <img src="https://github.com/user-attachments/assets/53779499-219e-45a8-8ae1-33d5b4baed1c" alt="Video Page"  />
 </div>
